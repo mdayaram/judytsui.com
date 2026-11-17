@@ -1,8 +1,103 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Ohai there</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>~*~ Ohai there ~*~ judytsui.com</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 16px;
+        color: #fff;
+        font-family: "Comic Sans MS", "Comic Neue", "Chalkboard SE", cursive;
+        background-color: #000040;
+        background-image:
+          radial-gradient(#fff 1px, transparent 1.5px),
+          radial-gradient(#ff0 1px, transparent 1.5px);
+        background-size: 60px 60px, 90px 90px;
+        background-position: 0 0, 30px 45px;
+      }
+      main { max-width: 640px; margin: 0 auto; text-align: center; }
+      marquee { background: #000; color: #0f0; font-family: "Courier New", monospace; padding: 4px 0; border: 2px inset #888; }
+      h1 {
+        font-size: clamp(2rem, 10vw, 4.5rem);
+        margin: 24px 0 8px;
+        background: linear-gradient(90deg, #f00, #f80, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow 3s linear infinite;
+      }
+      .blink { animation: blink 1s steps(1) infinite; color: #ff0; }
+      .construction {
+        margin: 20px 0;
+        padding: 10px;
+        font-weight: bold;
+        color: #000;
+        background: repeating-linear-gradient(45deg, #fc0 0 20px, #000 20px 40px);
+        border: 3px outset #fc0;
+      }
+      .construction span { background: #fc0; padding: 4px 10px; }
+      .facts {
+        text-align: left;
+        background: #c0c0c0;
+        color: #000;
+        border: 4px outset #fff;
+        padding: 4px 16px 12px;
+        margin: 20px 0;
+      }
+      .facts h2 { text-align: center; color: #c00; font-size: 1.3rem; }
+      .facts li { margin: 10px 0; }
+      .counter span {
+        display: inline-block;
+        background: #000;
+        color: #0f0;
+        font-family: "Courier New", monospace;
+        font-size: 1.4rem;
+        padding: 2px 6px;
+        margin: 0 1px;
+        border: 2px inset #555;
+      }
+      a { color: #0ff; }
+      a:visited { color: #f0f; }
+      .webring { margin: 24px 0; padding: 8px; border: 2px dashed #f0f; }
+      footer { font-size: 0.8rem; color: #aaa; margin-top: 24px; }
+      @keyframes rainbow { to { background-position: 200% center; } }
+      @keyframes blink { 50% { visibility: hidden; } }
+      @media (prefers-reduced-motion: reduce) {
+        h1, .blink { animation: none; }
+      }
+    </style>
   </head>
   <body>
-    <p>Ohai there</p>
+    <main>
+      <marquee scrollamount="6">★ ohai there ★ welcome 2 the OFFICIAL judy tsui fan site ★ est. 2026 ★ now with 100% more judy ★</marquee>
+
+      <h1>✨ JUDY TSUI ✨</h1>
+      <p class="blink">product manager • infra enthusiast • rebasing now ⏳</p>
+
+      <div class="construction"><span>🚧 UNDER CONSTRUCTION: judy is rebasing 🚧</span></div>
+
+      <section class="facts">
+        <h2>★ FUN FACTS ABOUT JUDY ★</h2>
+        <ol>
+          <li>Got meeting invites before her first day. Nobody could wait.</li>
+          <li>Automated Jira so tickets jump to In Progress the second you cut a branch. Wisely declined to define "done" for all of infra.</li>
+          <li>Keeper of a 140-item list. Malav got dizzy just reading it.</li>
+          <li>Owns this very domain, mostly to sign up for things. Did three test signups in 13 minutes; the sales bot ran due diligence on each one and rated her company Tier 1. Then it remembered the company was ours.</li>
+          <li>PM by title, infra engineer by sheer courage. Once locked Terraform with a single button click. Recently the pager learned her name. 🙇‍♀️</li>
+          <li>Fluent in 🙏 🙇‍♀️ ⏳ 😭</li>
+        </ol>
+      </section>
+
+      <p class="counter">u r visitor #<br><span>0</span><span>0</span><span>0</span><span>1</span><span>4</span><span>0</span></p>
+
+      <p>✍ <a href="https://github.com/mdayaram/judytsui.com">sign the guestbook</a> (open a PR)</p>
+
+      <p class="webring">« <a href="/">prev</a> | 🌐 the judy webring 🌐 | <a href="/">next</a> »</p>
+
+      <footer>best viewed in Netscape Navigator 4.0 @ 800x600<br>this shrine is lovingly maintained by the fans</footer>
+    </main>
   </body>
 </html>
